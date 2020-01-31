@@ -8,17 +8,17 @@ function max(x,y){
 	return x ^ ((x ^ y) & -(x < y));
 }
 ```
-> Chứng minh: 
-	- Nếu x < y:
-		-(x < y) = true (tất cả bit 1)
-		Suy ra:
-		x ^ ((x ^ y) & true) = x ^ x ^ y
-							 = y
-	- Nếu x >= y:
-		-(x < )y = false (tất cả bit 0)
-		Suy ra:
-		x ^ ((x ^ y) & false) = x ^ 0
-							  = x
+> Chứng minh:   
+	- Nếu x < y:   
+		-(x < y) = true (tất cả bit 1)  
+		Suy ra:   
+		x ^ ((x ^ y) & true) = x ^ x ^ y   
+							 = y   
+	- Nếu x >= y:  
+		-(x < )y = false (tất cả bit 0)  
+		Suy ra:  
+		x ^ ((x ^ y) & false) = x ^ 0   
+							  = x  
 
 
 
